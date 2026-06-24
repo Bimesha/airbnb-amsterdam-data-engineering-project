@@ -97,6 +97,7 @@ airbnb-data-engineering-project/
 
 ├── figures/
 ├── demo/
+├── architecture/
 ├── Presentation/
 └── exports/
 ```
