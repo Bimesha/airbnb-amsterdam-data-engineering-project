@@ -1,9 +1,7 @@
 from pathlib import Path
 import pandas as pd
 
-
 # Define folders
-
 processed_folder = Path("data/processed")
 reports_folder = Path("reports/generated_csv")
 reports_folder.mkdir(parents=True, exist_ok=True)
@@ -12,7 +10,6 @@ print("Starting transform step...\n")
 
 
 # Helper functions
-
 def clean_text(series):
     """
     Clean text values by:
@@ -52,7 +49,6 @@ neighbourhoods = pd.read_csv(
 
 
 # Clean listings table
-
 # Rename id column to listing_id for clearer table relationships
 listings = listings.rename(columns={"id": "listing_id"})
 
@@ -246,7 +242,6 @@ listings["invalid_coordinate_flag"] = (
 
 
 # Clean calendar table
-
 # Convert calendar date into datetime format
 calendar["date"] = pd.to_datetime(
     calendar["date"],
@@ -275,7 +270,6 @@ calendar["invalid_available_flag"] = (
 
 
 # Clean reviews table
-
 # Rename review id column
 reviews = reviews.rename(
     columns={"id": "review_id"}
@@ -294,7 +288,6 @@ reviews["invalid_review_date_flag"] = (
 
 
 # Clean neighbourhoods table
-
 # Add selected city name
 neighbourhoods["city"] = "Amsterdam"
 
@@ -308,7 +301,6 @@ neighbourhoods["neighbourhood"] = (
 
 
 # Save cleaned data
-
 listings.to_csv(
     processed_folder / "clean_listings.csv",
     index=False
@@ -331,7 +323,6 @@ neighbourhoods.to_csv(
 
 
 # Create summary report
-
 summary = [
 
     {
@@ -367,7 +358,6 @@ pd.DataFrame(summary).to_csv(
 
 
 # Create validation report
-
 validation_summary = [
 
     {
@@ -435,7 +425,6 @@ pd.DataFrame(validation_summary).to_csv(
 
 
 # Create cleaning decision log
-
 cleaning_decisions = [
 
     {

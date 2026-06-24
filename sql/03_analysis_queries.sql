@@ -2,48 +2,32 @@
 -- Airbnb Amsterdam Analysis Queries
 
 -- 1. Check table row counts
-
 SELECT 'dim_host' AS table_name, COUNT(*) AS row_count
 FROM analytics.dim_host
-
 UNION ALL
-
 SELECT 'dim_listing', COUNT(*)
 FROM analytics.dim_listing
-
 UNION ALL
-
 SELECT 'dim_neighbourhood', COUNT(*)
 FROM analytics.dim_neighbourhood
-
 UNION ALL
-
 SELECT 'fact_listing_performance', COUNT(*)
 FROM analytics.fact_listing_performance
-
 UNION ALL
-
 SELECT 'listing_master', COUNT(*)
 FROM analytics.listing_master
-
 UNION ALL
-
 SELECT 'calendar_summary', COUNT(*)
 FROM analytics.calendar_summary
-
 UNION ALL
-
 SELECT 'review_summary', COUNT(*)
 FROM analytics.review_summary
-
 UNION ALL
-
 SELECT 'neighbourhood_summary', COUNT(*)
 FROM analytics.neighbourhood_summary;
 
 
 -- 2. Average price by room type
-
 SELECT
     l.room_type,
     COUNT(*) AS listing_count,
@@ -58,7 +42,6 @@ ORDER BY median_price DESC;
 
 
 -- 3. Neighbourhood price and rating summary
-
 SELECT
     n.neighbourhood_cleansed,
     COUNT(*) AS listing_count,
@@ -75,7 +58,6 @@ ORDER BY median_price DESC;
 
 
 -- 4. Top hosts by number of listings
-
 SELECT
     h.host_id,
     h.host_name,
@@ -91,7 +73,6 @@ LIMIT 10;
 
 
 -- 5. Top listings by estimated revenue
-
 SELECT
     l.listing_id,
     l.name,
@@ -111,7 +92,6 @@ LIMIT 20;
 
 
 -- 6. Review score by room type
-
 SELECT
     l.room_type,
     COUNT(*) AS listing_count,
@@ -126,7 +106,6 @@ ORDER BY average_review_score DESC;
 
 
 -- 7. Price per bedroom by room type
-
 SELECT
     l.room_type,
     COUNT(*) AS listing_count,

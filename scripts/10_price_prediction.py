@@ -63,7 +63,6 @@ features = [col for col in features if col in df.columns]
 model_data = df[features + ["price_clean"]].copy()
 
 
-
 # Handle missing values
 for column in model_data.columns:
     if column == "price_clean":
@@ -74,7 +73,6 @@ for column in model_data.columns:
     else:
         model_data[column] = pd.to_numeric(model_data[column], errors="coerce")
         model_data[column] = model_data[column].fillna(model_data[column].median())
-
 
 
 # Encode categorical columns
@@ -141,7 +139,6 @@ for model_name, model in models.items():
         "test_rmse": round(rmse, 2),
         "test_r2": round(r2, 4)
     })
-
 
 
 # Save model comparison

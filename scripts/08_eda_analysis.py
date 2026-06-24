@@ -29,7 +29,6 @@ calendar = pd.read_csv(
 )
 
 
-
 # Prepare price data
 # Convert price column into numeric format
 listing_master["price_clean"] = pd.to_numeric(
@@ -85,7 +84,6 @@ plt.ylabel("Number of Listings")
 plt.tight_layout()
 plt.savefig(figures_folder / "price_distribution.png")
 plt.close()
-
 
 
 # 2. Price by room type
@@ -163,7 +161,6 @@ plt.savefig(figures_folder / "price_by_room_type.png")
 plt.close()
 
 
-
 # 3. Top neighbourhoods by median price
 # Calculate neighbourhood price and rating summary
 neighbourhood_price = (
@@ -216,7 +213,6 @@ plt.xticks(rotation=45, ha="right")
 plt.tight_layout()
 plt.savefig(figures_folder / "top_neighbourhoods_by_price.png")
 plt.close()
-
 
 
 # 4. Monthly availability
@@ -278,7 +274,6 @@ plt.savefig(figures_folder / "monthly_availability.png")
 plt.close()
 
 
-
 # 5. Host listing count analysis
 # Calculate listing count and average price by host
 host_summary = (
@@ -318,7 +313,6 @@ plt.xticks(rotation=45, ha="right")
 plt.tight_layout()
 plt.savefig(figures_folder / "top_hosts_by_listing_count.png")
 plt.close()
-
 
 
 # 6. Review score vs price

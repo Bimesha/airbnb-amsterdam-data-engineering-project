@@ -54,7 +54,6 @@ def result_text(p_value):
         return "No statistically significant difference found."
 
 
-
 # H1: Entire homes vs private rooms price
 # Select valid prices for entire homes
 entire_home_prices = listing_master[
@@ -94,7 +93,6 @@ if len(entire_home_prices) > 0 and len(private_room_prices) > 0:
     })
 
 
-
 # H2: Superhost vs non-superhost review scores
 # Run test only if both groups have data
 superhost_scores = listing_master[
@@ -130,7 +128,6 @@ if len(superhost_scores) > 0 and len(non_superhost_scores) > 0:
         "p_value": round(p_value, 6),
         "interpretation": result_text(p_value)
     })
-
 
 
 # H3: Listings with >10 reviews vs <=10 reviews price
@@ -170,7 +167,6 @@ if len(high_review_prices) > 0 and len(low_review_prices) > 0:
         "p_value": round(p_value, 6),
         "interpretation": result_text(p_value)
     })
-
 
 
 # H4: Price differences across neighbourhoods
@@ -218,7 +214,6 @@ if len(groups) >= 2:
     })
 
 
-
 # H5: Weekend vs weekday price
 results.append({
     "hypothesis": "H5",
@@ -234,7 +229,6 @@ results.append({
     "p_value": "",
     "interpretation": "This test was not performed because calendar price and adjusted_price are missing in the Amsterdam dataset."
 })
-
 
 
 # Save results

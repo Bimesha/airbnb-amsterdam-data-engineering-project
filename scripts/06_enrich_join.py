@@ -20,7 +20,6 @@ neighbourhoods = pd.read_csv(processed_folder / "clean_neighbourhoods.csv", low_
 listings = listings.rename(columns={"id": "listing_id"})
 
 
-
 # 1. calendar summary
 # Convert availability values into boolean formats
 calendar["is_available"] = calendar["is_available"].astype(str).map({
@@ -41,13 +40,11 @@ calendar_summary["occupancy_rate"] = (
 ).round(2)
 
 
-
 # 2. Review summary per listing
 # Count reviews for each listing
 review_summary = reviews.groupby("listing_id").agg(
     review_count=("review_id", "count")
 ).reset_index()
-
 
 
 # 3. Join tables (Master dataset)
@@ -60,7 +57,6 @@ listing_master = listing_master.merge(review_summary, on="listing_id", how="left
 # Fill missing values with 0
 listing_master["review_count"] = listing_master["review_count"].fillna(0)
 listing_master["occupancy_rate"] = listing_master["occupancy_rate"].fillna(0)
-
 
 
 # 4. Derived features
@@ -90,7 +86,6 @@ listing_master["estimated_revenue"] = (
 ).round(2)
 
 
-
 # 5. Neighbourhood summary
 neighbourhood_summary = listing_master.groupby("neighbourhood_cleansed").agg(
     listing_count=("listing_id", "count"),
@@ -103,13 +98,11 @@ neighbourhood_summary = listing_master.groupby("neighbourhood_cleansed").agg(
 neighbourhood_summary = neighbourhood_summary.round(2)
 
 
-
 # 6. Save outputs
 calendar_summary.to_csv(processed_folder / "calendar_summary.csv", index=False)
 review_summary.to_csv(processed_folder / "review_summary.csv", index=False)
 listing_master.to_csv(processed_folder / "listing_master.csv", index=False)
 neighbourhood_summary.to_csv(processed_folder / "neighbourhood_summary.csv", index=False)
-
 
 
 # Report

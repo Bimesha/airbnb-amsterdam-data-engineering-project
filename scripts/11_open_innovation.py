@@ -12,7 +12,6 @@ exports_folder.mkdir(parents=True, exist_ok=True)
 print("Starting open innovation analysis...\n")
 
 
-
 # Read data
 listing_master = pd.read_csv(
     processed_folder / "listing_master.csv",
@@ -23,7 +22,6 @@ neighbourhood_summary = pd.read_csv(
     processed_folder / "neighbourhood_summary.csv",
     low_memory=False
 )
-
 
 
 # Make sure numeric columns are numeric
@@ -60,7 +58,6 @@ for column in summary_numeric_columns:
         )
 
 
-
 # Basic market values
 overall_median_price = listing_master["price_clean"].median()
 overall_avg_rating = listing_master["review_scores_rating"].mean()
@@ -71,7 +68,6 @@ if "median_price" in neighbourhood_summary.columns:
     neighbourhood_price_column = "median_price"
 else:
     neighbourhood_price_column = "avg_price"
-
 
 
 # 1. Value neighbourhoods
@@ -95,7 +91,6 @@ value_neighbourhoods.to_csv(
 )
 
 
-
 # 2. Premium neighbourhoods
 # Neighbourhoods with highest prices
 premium_neighbourhoods = neighbourhood_summary.sort_values(
@@ -108,7 +103,6 @@ premium_neighbourhoods.to_csv(
     exports_folder / "premium_neighbourhoods.csv",
     index=False
 )
-
 
 
 # 3. High occupancy neighbourhoods
@@ -125,7 +119,6 @@ high_occupancy_neighbourhoods.to_csv(
     exports_folder / "high_occupancy_neighbourhoods.csv",
     index=False
 )
-
 
 
 # 4. Listings that may need improvement
@@ -159,7 +152,6 @@ improvement_opportunities[improvement_columns].to_csv(
 )
 
 
-
 # 5. Top estimated revenue listings
 top_revenue_listings = listing_master[
     listing_master["estimated_revenue"].notna()
@@ -184,7 +176,6 @@ top_revenue_listings[revenue_columns].to_csv(
     exports_folder / "top_estimated_revenue_listings.csv",
     index=False
 )
-
 
 
 # Create simple markdown report

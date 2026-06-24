@@ -41,7 +41,6 @@ listing_master = listing_master.merge(
 )
 
 
-
 # Create host dimension
 dim_host = listing_master[[
     "host_id",
@@ -51,7 +50,6 @@ dim_host = listing_master[[
     "host_tenure_years",
     "calculated_host_listings_count"
 ]].drop_duplicates(subset=["host_id"])
-
 
 
 # Create listing dimension
@@ -68,7 +66,6 @@ dim_listing = listing_master[[
     "minimum_nights",
     "maximum_nights"
 ]].drop_duplicates(subset=["listing_id"])
-
 
 
 # Create fact table
