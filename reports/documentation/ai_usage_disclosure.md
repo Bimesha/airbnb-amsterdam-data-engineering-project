@@ -1,6 +1,6 @@
 # AI Usage Disclosure
 
-AI tools were used as support during this project. They were used to help understand the assessment requirements, organize the work, improve documentation, and check whether the final explanation was clear and aligned with the assignment expectations.
+AI tools were used as support during this project. They were used to help understand the assessment requirements, organize the work and improve documentation.
 
 ## AI Tools Used
 
@@ -15,7 +15,6 @@ AI tools were used as support during this project. They were used to help unders
 - Improving the wording of README and report sections.
 - Explaining how to document assumptions, limitations, and decisions.
 - Improving the clarity of business interpretations and recommendations.
-- Checking that the final write-up stayed simple, professional, and suitable for an internship-level assessment.
 
 ## Example Prompt Types Used
 

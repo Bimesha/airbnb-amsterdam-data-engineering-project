@@ -30,4 +30,4 @@ If a step fails, the pipeline stops and records the failure in the pipeline log.
 
 ## Production Considerations
 
-For a larger production version, the pipeline could be improved with scheduling, Docker, orchestration, database migrations, automated testing, and monitoring. These were not included because the project scope was kept internship-level and focused on the core workflow.
+For a larger production version, the pipeline could be improved with scheduling, Docker, orchestration, database migrations, automated testing, and monitoring. These were not included because, focused on the core workflow.

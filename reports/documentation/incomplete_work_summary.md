@@ -9,6 +9,6 @@ The following items were not completed because they were outside the selected sc
 | Advanced NLP on review comments | Not completed | The project prioritized data engineering, EDA, statistics, and price prediction. |
 | Dashboard | Not completed | Optional item; static charts and reports were prioritized. |
 | Docker | Not completed | Optional item; focus remained on clear local reproducibility. |
-| Cloud deployment | Not completed | Outside the selected internship-level scope. |
+| Cloud deployment | Not completed | Outside the selected scope. |
 | dbt or orchestration tools | Not completed | The project used simple Python scripts instead. |
 | Production ML deployment | Not completed | The price model was only an exploratory experiment. |
