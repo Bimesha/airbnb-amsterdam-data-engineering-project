@@ -1,0 +1,8 @@
+step_no,section,script,description,status,attempts,start_time,end_time,duration_seconds,error_message
+1,2.3 / 3.1,scripts/01_check_files.py,Check downloaded raw files,success,1,2026-06-23 00:58:21.774112,2026-06-23 00:58:39.366003,17.59,
+2,2.3 / 3.1,scripts/02_profile_data.py,Profile datasets and create schema reports,success,1,2026-06-23 00:58:39.366003,2026-06-23 00:59:15.099817,35.73,
+3,3.1,scripts/03_extract.py,Extract useful columns from raw files,success,1,2026-06-23 00:59:15.099817,2026-06-23 01:02:18.760972,183.66,
+4,3.1,scripts/04_quality_checks.py,Run data quality checks,success,1,2026-06-23 01:02:18.760972,2026-06-23 01:02:50.636962,31.88,
+5,3.2,scripts/05_transform.py,Clean and standardize data,success,1,2026-06-23 01:02:50.637964,2026-06-23 01:07:04.638327,254.0,
+6,3.3,scripts/06_enrich_join.py,Join and enrich datasets,success,1,2026-06-23 01:07:04.638327,2026-06-23 01:07:22.478032,17.84,
+7,3.4,scripts/07_load_to_postgres.py,Load data model into PostgreSQL,success,1,2026-06-23 01:07:22.478032,2026-06-23 01:07:35.418112,12.94,

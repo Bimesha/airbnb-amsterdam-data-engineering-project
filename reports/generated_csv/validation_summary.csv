@@ -1,0 +1,8 @@
+check,table,flagged_records
+missing_price,listings,4606
+invalid_price,listings,0
+missing_review_score,listings,1097
+invalid_coordinates,listings,0
+invalid_calendar_date,calendar,0
+invalid_available_value,calendar,0
+invalid_review_date,reviews,0

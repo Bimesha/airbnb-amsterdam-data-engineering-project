@@ -1,0 +1,16 @@
+feature,importance
+accommodates,0.33226251481686525
+bedrooms,0.09126099245492919
+availability_365,0.08899636401797932
+room_type_Private room,0.07229243056590422
+review_count,0.0688775656589282
+review_scores_rating,0.06343078999061462
+occupancy_rate,0.04281881601413066
+neighbourhood_cleansed_Centrum-West,0.038977424649352985
+beds,0.029333163754790358
+neighbourhood_cleansed_Centrum-Oost,0.02705687137496654
+neighbourhood_cleansed_De Baarsjes - Oud-West,0.019236535701945143
+neighbourhood_cleansed_De Pijp - Rivierenbuurt,0.015929182015176645
+neighbourhood_cleansed_Noord-West,0.011367106276390601
+property_type_Room in hotel,0.009376449698399115
+property_type_Entire condo,0.008983335489787131

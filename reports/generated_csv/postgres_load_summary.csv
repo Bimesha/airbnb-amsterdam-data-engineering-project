@@ -1,0 +1,9 @@
+table_name,rows
+analytics.dim_host,9201
+analytics.dim_listing,10480
+analytics.dim_neighbourhood,22
+analytics.fact_listing_performance,10480
+analytics.listing_master,10480
+analytics.calendar_summary,10480
+analytics.review_summary,9383
+analytics.neighbourhood_summary,22

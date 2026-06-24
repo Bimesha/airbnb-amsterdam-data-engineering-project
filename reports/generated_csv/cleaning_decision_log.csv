@@ -1,0 +1,9 @@
+area,decision
+price,"Removed currency symbols and commas, then converted to numeric"
+dates,"Parsed host, calendar, and review dates using pandas datetime"
+text fields,Trimmed spaces and standardized text fields
+missing names,Filled missing listing and host names with Unknown
+review fields,Filled missing review count and reviews per month with 0
+review scores,Kept missing review scores as null
+geography,Added city name and rounded coordinates to 5 decimal places
+invalid records,Flagged invalid records instead of deleting them

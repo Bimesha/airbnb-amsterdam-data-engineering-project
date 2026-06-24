@@ -1,0 +1,6 @@
+hypothesis,question,test_used,group_1,group_2,group_1_count,group_2_count,group_1_median,group_2_median,practical_difference,p_value,interpretation
+H1,Do entire homes and private rooms have different prices?,Mann-Whitney U test,Entire home/apt,Private room,4532,1274,248.0,139.0,109.0,0.0,Statistically significant difference found.
+H2,Do superhost and non-superhost listings have different review scores?,Mann-Whitney U test,Superhost,Non-superhost,1813,7460,4.9,4.94,-0.04,0.0,Statistically significant difference found.
+H3,Do listings with more than 10 reviews have different prices?,Mann-Whitney U test,More than 10 reviews,10 or fewer reviews,3054,2820,207.0,234.0,-27.0,0.0,Statistically significant difference found.
+H4,Do prices differ across major neighbourhoods?,One-way ANOVA,Top 5 neighbourhoods,Not applicable,3426,,,,Neighbourhood price differences tested,0.004567,Statistically significant difference found.
+H5,Are weekend and weekday prices different?,Not performed,Weekend,Weekday,,,,,,,This test was not performed because calendar price and adjusted_price are missing in the Amsterdam dataset.

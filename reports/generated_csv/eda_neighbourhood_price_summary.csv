@@ -1,0 +1,23 @@
+neighbourhood_cleansed,listing_count,median_price,average_rating
+Bijlmer-Centrum,35,134.0,4.6
+Bijlmer-Oost,22,127.5,4.74
+Bos en Lommer,261,184.0,4.83
+Buitenveldert - Zuidas,82,182.5,4.79
+Centrum-Oost,580,240.0,4.82
+Centrum-West,770,245.5,4.82
+De Aker - Nieuw Sloten,42,151.5,4.86
+De Baarsjes - Oud-West,992,240.0,4.86
+De Pijp - Rivierenbuurt,649,250.0,4.86
+Gaasperdam - Driemond,30,130.5,4.72
+Geuzenveld - Slotermeer,91,182.0,4.77
+IJburg - Zeeburgereiland,107,198.0,4.85
+Noord-Oost,127,169.0,4.85
+Noord-West,175,180.0,4.83
+Oostelijk Havengebied - Indische Buurt,231,195.0,4.85
+Osdorp,37,153.0,4.87
+Oud-Noord,252,196.5,4.8
+Oud-Oost,326,222.0,4.82
+Slotervaart,100,185.5,4.86
+Watergraafsmeer,138,213.5,4.85
+Westerpark,392,214.5,4.84
+Zuid,435,238.0,4.87

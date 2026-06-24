@@ -1,0 +1,218 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT">
+  <diagram id="airbnb-amsterdam-architecture" name="Airbnb Amsterdam Data Architecture">
+    <mxGraphModel dx="3433" dy="1873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=default;fillColor=none;fontColor=#000000;fontStyle=1;fontSize=14;align=center;fontFamily=Times New Roman;strokeWidth=2;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Data Architecture&lt;/font&gt;" vertex="1">
+          <mxGeometry height="45" width="980" x="540" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="h1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=default;fontColor=#000000;fontStyle=1;fontSize=14;arcSize=12;fontFamily=Times New Roman;strokeWidth=2;" value="&lt;font style=&quot;&quot;&gt;1. Data Source&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="230" x="40" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=default;arcSize=8;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeWidth=2;" vertex="1">
+          <mxGeometry height="560" width="230" x="40" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="h2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=default;fontColor=#000000;fontStyle=1;fontSize=14;arcSize=12;fontFamily=Times New Roman;strokeWidth=2;" value="&lt;font style=&quot;&quot;&gt;2. Python ETL Pipeline&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="230" x="360" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=default;arcSize=8;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeWidth=2;" vertex="1">
+          <mxGeometry height="560" width="230" x="360" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="h3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=default;fontColor=#000000;fontStyle=1;fontSize=14;arcSize=12;fontFamily=Times New Roman;strokeWidth=2;" value="&lt;font style=&quot;&quot;&gt;3. Processed Data Outputs&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="230" x="685" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=default;arcSize=8;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeWidth=2;" vertex="1">
+          <mxGeometry height="560" width="230" x="685" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="h4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=default;fontColor=#000000;fontStyle=1;fontSize=14;arcSize=12;fontFamily=Times New Roman;strokeWidth=2;" value="&lt;font style=&quot;&quot;&gt;4. PostgreSQL Analytical Model&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="230" x="1037.5" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=default;arcSize=8;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeWidth=2;" vertex="1">
+          <mxGeometry height="560" width="305" x="1000" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="h5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=default;fontColor=#000000;fontStyle=1;fontSize=14;arcSize=12;fontFamily=Times New Roman;strokeWidth=2;" value="&lt;font style=&quot;&quot;&gt;5. Analytics &amp;amp; Modeling&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="230" x="1415" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="p5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=default;arcSize=8;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeWidth=2;" vertex="1">
+          <mxGeometry height="560" width="230" x="1415" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="h6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=default;fontColor=#000000;fontStyle=1;fontSize=14;arcSize=12;fontFamily=Times New Roman;strokeWidth=2;" value="&lt;font style=&quot;&quot;&gt;6. Final Outputs&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="230" x="1715" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="p6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=default;arcSize=8;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeWidth=2;" vertex="1">
+          <mxGeometry height="560" width="230" x="1715" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="src_title" parent="1" style="text;html=1;strokeColor=default;fillColor=none;fontSize=14;fontStyle=1;align=center;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;font&gt;Inside Airbnb&lt;br&gt;&lt;b&gt;Amsterdam Dataset&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="70" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="src_file_0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;spacingLeft=8;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;font&gt;listings.csv.gz&lt;/font&gt;" vertex="1">
+          <mxGeometry height="45" width="190" x="60" y="281" as="geometry" />
+        </mxCell>
+        <mxCell id="src_file_1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;spacingLeft=8;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;font&gt;calendar.csv.gz&lt;/font&gt;" vertex="1">
+          <mxGeometry height="45" width="190" x="60" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="src_file_2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;spacingLeft=8;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;font&gt;reviews.csv.gz&lt;/font&gt;" vertex="1">
+          <mxGeometry height="45" width="190" x="60" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="src_file_3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;spacingLeft=8;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;font&gt;neighbourhoods.csv&lt;/font&gt;" vertex="1">
+          <mxGeometry height="45" width="190" x="60" y="493" as="geometry" />
+        </mxCell>
+        <mxCell id="src_note" parent="1" style="text;html=1;strokeColor=default;fillColor=none;fontSize=14;fontColor=#000000;align=center;fontFamily=Times New Roman;strokeWidth=2;" value="&lt;font&gt;Stored in data/raw/&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="190" x="60" y="579" as="geometry" />
+        </mxCell>
+        <mxCell id="script_0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;font&gt;&lt;b&gt;01_check_files.py&lt;/b&gt;&lt;br&gt;file validation&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="190" x="380" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="script_1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;font&gt;&lt;b&gt;02_profile_data.py&lt;/b&gt;&lt;br&gt;profiling &amp;amp; schema review&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="190" x="380" y="253" as="geometry" />
+        </mxCell>
+        <mxCell id="script_arrow_1" edge="1" parent="1" source="script_0" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;" target="script_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="script_2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;font&gt;&lt;b&gt;03_extract.py&lt;/b&gt;&lt;br&gt;column extraction&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="190" x="380" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="script_arrow_2" edge="1" parent="1" source="script_1" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;" target="script_2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="script_3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;font&gt;&lt;b&gt;04_quality_checks.py&lt;/b&gt;&lt;br&gt;data quality checks&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="190" x="380" y="363" as="geometry" />
+        </mxCell>
+        <mxCell id="script_arrow_3" edge="1" parent="1" source="script_2" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;" target="script_3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="script_4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;font&gt;&lt;b&gt;05_transform.py&lt;/b&gt;&lt;br&gt;cleaning &amp;amp; standardization&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="190" x="380" y="418" as="geometry" />
+        </mxCell>
+        <mxCell id="script_arrow_4" edge="1" parent="1" source="script_3" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;" target="script_4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="script_5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;font&gt;&lt;b&gt;06_enrich_join.py&lt;/b&gt;&lt;br&gt;enrichment &amp;amp; joins&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="190" x="380" y="473" as="geometry" />
+        </mxCell>
+        <mxCell id="script_arrow_5" edge="1" parent="1" source="script_4" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;" target="script_5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="script_6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;font&gt;&lt;b&gt;07_load_to_postgres.py&lt;/b&gt;&lt;br&gt;database loading&lt;/font&gt;" vertex="1">
+          <mxGeometry height="42" width="190" x="380" y="528" as="geometry" />
+        </mxCell>
+        <mxCell id="script_arrow_6" edge="1" parent="1" source="script_5" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;" target="script_6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="orchestrated" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;font&gt;Orchestrated by&lt;br&gt;&lt;b&gt;run_pipeline.py&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="55" width="185" x="380" y="603" as="geometry" />
+        </mxCell>
+        <mxCell id="tools_py" parent="1" style="text;html=1;strokeColor=default;fillColor=none;fontColor=#000000;fontSize=14;align=center;fontFamily=Times New Roman;strokeWidth=2;" value="&lt;font style=&quot;&quot;&gt;Tools: &lt;b&gt;Python, pandas&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="25" width="190" x="375" y="668" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_title" parent="1" style="text;html=1;strokeColor=default;fillColor=none;fontSize=14;fontColor=#000000;align=center;fontFamily=Times New Roman;strokeWidth=2;" value="&lt;font&gt;&lt;b&gt;Processed Files&lt;/b&gt;&lt;br&gt;(data/processed/)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="55" width="170" x="715" y="198" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="clean_listings.csv" vertex="1">
+          <mxGeometry height="35" width="180" x="710" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="clean_calendar.csv" vertex="1">
+          <mxGeometry height="35" width="180" x="710" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="clean_reviews.csv" vertex="1">
+          <mxGeometry height="35" width="180" x="710" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="clean_neighbourhoods.csv" vertex="1">
+          <mxGeometry height="35" width="180" x="710" y="418" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="listing_master.csv" vertex="1">
+          <mxGeometry height="35" width="180" x="710" y="468" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="calendar_summary.csv" vertex="1">
+          <mxGeometry height="35" width="180" x="710" y="518" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="review_summary.csv" vertex="1">
+          <mxGeometry height="35" width="180" x="710" y="568" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="neighbourhood_summary.csv" vertex="1">
+          <mxGeometry height="35" width="180" x="710" y="618" as="geometry" />
+        </mxCell>
+        <mxCell id="dim_host" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f0ff;strokeColor=default;fontSize=14;fontStyle=1;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="dim_host" vertex="1">
+          <mxGeometry height="42" width="90" x="1100" y="321" as="geometry" />
+        </mxCell>
+        <mxCell id="dim_listing" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f0ff;strokeColor=default;fontSize=14;fontStyle=1;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="dim_listing" vertex="1">
+          <mxGeometry height="42" width="110" x="1090" y="423" as="geometry" />
+        </mxCell>
+        <mxCell id="dim_neighbourhood" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f0ff;strokeColor=default;fontSize=14;fontStyle=1;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="dim_neighbourhood" vertex="1">
+          <mxGeometry height="55" width="125" x="1020" y="538" as="geometry" />
+        </mxCell>
+        <mxCell id="fact_listing" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f0ff;strokeColor=default;fontSize=14;fontStyle=1;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="fact_listing_&lt;div&gt;performance&lt;/div&gt;" vertex="1">
+          <mxGeometry height="58" width="120" x="1165" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" edge="1" parent="1" source="rJVUq1QwkPRyn_wCUDx5-4" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=default;fontFamily=Times New Roman;fontSize=14;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;" target="dim_host">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1127.121212121212" y="283.0000000000001" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" edge="1" parent="1" source="dim_host" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;" target="dim_listing">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m3" edge="1" parent="1" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;" target="dim_neighbourhood">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1134" y="465" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4" edge="1" parent="1" source="dim_listing" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;" target="fact_listing">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tools_pg" parent="1" style="text;html=1;strokeColor=default;fillColor=none;fontColor=#000000;fontSize=14;align=center;fontFamily=Times New Roman;strokeWidth=2;" value="Tools: &lt;b&gt;PostgreSQL,&lt;br&gt;SQLAlchemy&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="170" x="1067.5" y="623" as="geometry" />
+        </mxCell>
+        <mxCell id="an_0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;b&gt;08_eda_analysis.py&lt;/b&gt;&lt;br&gt;EDA &amp;amp; charts" vertex="1">
+          <mxGeometry height="58" width="180" x="1445" y="223" as="geometry" />
+        </mxCell>
+        <mxCell id="an_1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;b&gt;09_statistical_analysis.py&lt;/b&gt;&lt;br&gt;hypothesis testing" vertex="1">
+          <mxGeometry height="58" width="180" x="1445" y="323" as="geometry" />
+        </mxCell>
+        <mxCell id="an_2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;b&gt;10_price_prediction.py&lt;/b&gt;&lt;br&gt;price prediction" vertex="1">
+          <mxGeometry height="58" width="180" x="1445" y="423" as="geometry" />
+        </mxCell>
+        <mxCell id="an_3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;b&gt;11_open_innovation.py&lt;/b&gt;&lt;br&gt;opportunity finder" vertex="1">
+          <mxGeometry height="58" width="180" x="1445" y="523" as="geometry" />
+        </mxCell>
+        <mxCell id="rJVUq1QwkPRyn_wCUDx5-1" edge="1" parent="1" source="tools_an" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;strokeWidth=2;strokeColor=default;" target="an_3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tools_an" parent="1" style="text;html=1;strokeColor=default;fillColor=none;fontColor=#000000;fontSize=14;align=center;fontFamily=Times New Roman;strokeWidth=2;" value="&lt;font style=&quot;&quot;&gt;Tools: &lt;b&gt;matplotlib, scipy,&lt;br&gt;scikit-learn&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="45" width="180" x="1445" y="623" as="geometry" />
+        </mxCell>
+        <mxCell id="out_0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;b&gt;reports/&lt;/b&gt;&lt;br&gt;CSV reports," vertex="1">
+          <mxGeometry height="58" width="180" x="1745" y="213" as="geometry" />
+        </mxCell>
+        <mxCell id="out_1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;b&gt;figures/&lt;/b&gt;&lt;br&gt;charts" vertex="1">
+          <mxGeometry height="58" width="180" x="1745" y="301" as="geometry" />
+        </mxCell>
+        <mxCell id="out_2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;b&gt;exports/&lt;/b&gt;&lt;br&gt;business outputs" vertex="1">
+          <mxGeometry height="58" width="180" x="1745" y="389" as="geometry" />
+        </mxCell>
+        <mxCell id="out_3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=default;fontSize=14;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;b&gt;notebooks/&lt;/b&gt;&lt;br&gt;analytical storytelling" vertex="1">
+          <mxGeometry height="58" width="180" x="1745" y="477" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_0" edge="1" parent="1" source="p1" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;" target="p2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_1" edge="1" parent="1" source="p2" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;" target="p3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_2" edge="1" parent="1" source="p3" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;" target="p4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_3" edge="1" parent="1" source="p4" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;" target="p5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_4" edge="1" parent="1" source="p5" style="endArrow=block;html=1;rounded=0;strokeWidth=2;strokeColor=default;fontFamily=Times New Roman;fontSize=14;fontColor=#000000;" target="p6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rJVUq1QwkPRyn_wCUDx5-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f0ff;strokeColor=default;fontSize=14;fontStyle=1;arcSize=6;fontFamily=Times New Roman;fontColor=#000000;strokeWidth=2;" value="&lt;div&gt;PostgreSQL /&lt;/div&gt;&lt;div&gt;analytics schema&lt;/div&gt;" vertex="1">
+          <mxGeometry height="67" width="165" x="1062.5" y="218.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
