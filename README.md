@@ -96,6 +96,8 @@ airbnb-data-engineering-project/
 │   └── generated_csv
 
 ├── figures/
+├── demo/
+├── Presentation/
 └── exports/
 ```
 
